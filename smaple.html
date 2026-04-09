@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Pro Plinko</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div id="game-wrapper">
+    <div class="sidebar">
+        <div class="box">
+            <span class="label">WALLET BALANCE</span>
+            <span class="value" id="balance">$1000.00</span>
+        </div>
+        <div class="box">
+            <span class="label">BET AMOUNT</span>
+            <input type="number" id="betAmount" value="10.00" min="0.10" step="1.00">
+        </div>
+        <button id="betButton">BET</button>
+        <div class="profit" id="last-win"></div>
+    </div>
+    <div id="canvas-container"></div>
+</div>
+
+<script src="./game.js"></script>
+</body>
+</html>
